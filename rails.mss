@@ -30,12 +30,12 @@
     marker-transform: rotate([angle], 0, 0);
     marker-ignore-placement: true;
   }
-  [railway="station"][zoom>=13],
+  [railway="station"][zoom>=10],
   [railway="halt"][zoom>=13] {
     [len<=12], [zoom>=14] {
     text-name: [name];
     text-face-name: @sans;
-    text-fill: @gray;
+    text-fill: black;
     text-size: 10;
     text-dx: 7;
     text-dy: 7;
@@ -53,7 +53,7 @@
 
 .railway[railway="rail"] {
   casing/line-width: 2.5;
-  casing/line-color: @gray;
+  casing/line-color: black;
   
   dash/line-width: 1.5;
   dash/line-color: white;
@@ -62,7 +62,7 @@
 
 .railway[railway="narrow_gauge"][zoom>=10] {
   casing/line-width: 1.2;
-  casing/line-color: @gray;
+  casing/line-color: black;
 
   dash/line-width: 5;
   dash/line-color: @gray;
