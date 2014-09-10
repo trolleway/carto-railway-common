@@ -23,7 +23,7 @@
   [highway="primary_link"][zoom>=12] {
     line-width:1.5;
     [zoom<10] { line-width: 1.1; }
-    line-color:black;
+    line-color:@gray;
   }
   
   [highway="secondary"][zoom>=15],
@@ -33,7 +33,7 @@
     ::casing {
       line-width: 3;
       [zoom<9], [highway="primary"][zoom<12] { line-width: 2.5; }
-      line-color: black;
+      line-color: @gray;
       line-cap: butt;
       line-join: round;
     }
@@ -93,7 +93,7 @@
     text-name: [ref];
     text-face-name: @sans_caption;
     text-size: 9;
-    text-fill: black;
+    text-fill: @gray;
     text-allow-overlap: false;
     text-min-distance: 300;
     text-spacing: 400;
