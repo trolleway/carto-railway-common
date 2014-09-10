@@ -12,6 +12,7 @@
     text-placements: "X,N,S,NE,SE,NW,SW";
     text-min-distance: 20;
     text-allow-overlap: false;
+    text-fill: @gray;
     /*text-character-spacing: 1.00;*/
     
     [place!="city"][place!="suburb"][zoom<13],
@@ -62,6 +63,7 @@
     shield-min-distance: 20;
     shield-allow-overlap: false;
     shield-unlock-image: true;
+    shield-fill: @gray;
     /*text-character-spacing: 1.00;*/
     
     [place="town"], [place="city"] {
